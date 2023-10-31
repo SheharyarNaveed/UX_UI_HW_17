@@ -1,0 +1,120 @@
+body {
+    background-color: #232323;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 30px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.Navbar a {
+    position: relative;
+    font-size: 16px;
+    font-family: avenir;
+    color: white;
+    text-decoration: none;
+    margin-left: 40px;
+    overflow-x: auto;
+}
+
+.Navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .3s;
+}
+
+.Navbar a:hover::before{
+    width: 100%;
+}
+
+h1 {
+    text-align: left;
+    font-family: avenir;
+    font-size: 60px;
+    padding-left: 218px;
+    padding-top: 150px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: avenir;
+    font-size: 30px;
+    padding-top: 10px;
+    color: white;
+}
+
+h3 {
+    text-align: right;
+    font-family: avenir;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 230px;
+    color: white;
+}
+
+.Arrow {
+    display: block;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+h4 {
+    text-align: center;
+    font-family: avenir;
+    font-size: 60px;
+    padding-top: 200px;
+    color: white;
+}
+
+p {
+    font-family: avenir;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  margin-bottom: 100px;
+}
+
+.solid {
+    color: white;
+    height: 0.5px;
+    width: 800px;
+}
+
+.TextBox {
+    margin-left: 35px;
+    margin-right: 35px;
+    display: inline-block;
+    padding: 100px;
+    font-size: 15px;
+    font-family: avenir;
+    color: white;
+}
